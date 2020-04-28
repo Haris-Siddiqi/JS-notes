@@ -13,6 +13,20 @@ if (condition) {
   code;
 }
 
+// switch statements (uses strict equality ===)
+switch (var) {
+  case value1:
+    statement1;
+    break;
+  case value2:
+  case value3:
+    statement2;
+    break;
+  default:
+    defaultStatement;
+    break;
+}
+
 // operators
 // == / != (type conversion to common type) vs === / !=== (strict equality)
 // <, <= have type conversion
