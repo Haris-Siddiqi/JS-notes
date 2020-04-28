@@ -44,6 +44,14 @@ function functionName(x, y) {
   console.log("Hello World");
   return x + y;
 }
-               
+
 // objects
-               
+// similar to arrays but use properties to access them instead
+var cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "enemies": ["Water", "Dogs"]
+};
+// dot notation vs bracket notation
+var x = cat.name; // Whiskers
+var y = cat["legs"]; // 4
