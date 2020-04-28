@@ -1,0 +1,23 @@
+// basics
+// strings are immutable (cannot change 'bob' to 'job')
+var lastName = "Lovelace";
+console.log(lastName.length); // 8
+console.log(lastName[2]); // v
+
+// arrays
+// delare arrays normally, can have different data types, arrays are mutable
+var myArray = ["a", 12, ["b", "c"];
+// .push(), .pop()    .unshift(), .shift()
+
+// functions
+function functionName(x, y) {
+  console.log("Hello World");
+  return x + y;
+}
+
+// if statements
+
+// operators
+// == / != (type conversion to common type) vs === / !=== (strict equality)
+// <, <= have type conversion
+// && - and       || - or
