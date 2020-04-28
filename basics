@@ -1,6 +1,8 @@
-// string, variables, printing
-// strings are immutable (cannot change 'bob' to 'job')
+// var
 var lastName = "Lovelace";
+
+// string
+// strings are immutable (cannot change 'bob' to 'job')
 console.log(lastName.length); // 8
 console.log(lastName[2]); // v
 
@@ -42,3 +44,6 @@ function functionName(x, y) {
   console.log("Hello World");
   return x + y;
 }
+               
+// objects
+               
