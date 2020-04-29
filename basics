@@ -5,6 +5,7 @@ var lastName = "Lovelace";
 // strings are immutable (cannot change 'bob' to 'job')
 console.log(lastName.length); // 8
 console.log(lastName[2]); // v
+parseInt("11", 10); // converts base 10 string to int
 
 // if statements
 if (condition) {
@@ -13,6 +14,15 @@ if (condition) {
   code;
 } else {
   code;
+}
+
+// Ternary operator
+function checkEqual(a, b) {
+  return a === b ? "Equal" : "Not Equal"; // case of true: case of false;
+}
+
+function checkSign(num) {
+  return (num > 0) ? "positive" : (num < 0) ? "negative" : "zero"; // pos, neg or zero
 }
 
 // switch statements (uses strict equality ===)
@@ -34,10 +44,29 @@ switch (var) {
 // <, <= have type conversion
 // && - and       || - or
 
+// while loop
+var i = 0;
+while(i < val) {
+  code;
+  i++;
+}
+
+// do while loop
+var i = 0;
+do {
+  code;
+  i++;
+} while (i < val);
+
+// for loop
+for (var i = 0; i < val; i++) {
+  code;
+}
+
 // arrays
 // delare arrays normally, can have different data types, arrays are mutable
 var myArray = ["a", 12, ["b", "c"];
-// .push(), .pop()    .unshift(), .shift()
+// .push(), .pop()    .unshift(), .shift()    .length
 
 // functions
 function functionName(x, y) {
@@ -52,6 +81,27 @@ var cat = {
   "legs": 4,
   "enemies": ["Water", "Dogs"]
 };
+
 // dot notation vs bracket notation
 var x = cat.name; // Whiskers
 var y = cat["legs"]; // 4
+
+// methods
+cat.name = "felix"; // updating object property
+cat["sound"] = "meow"; // add new property
+delete cat.sound; // delete property
+cat.hasOwnProperty("weight"); // check if property exists
+
+// recursion
+function sum(arr, n) {
+  if(n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+}
+
+// random numbers
+Math.random(); // random decimal between [0, 1)
+Math.floor(Math.random() * 10); // random num between 0-9
+Math.floor(Math.random() * (max - min + 1)) + min // random num in range inclusive
