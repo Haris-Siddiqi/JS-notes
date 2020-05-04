@@ -2,3 +2,14 @@
 // var is function scoped (availible inside the whole method you use it in)
 // let and const are block scoped. should use these by default
 let age = 2;
+
+// rough
+// arrow function examples
+(param1, param2) => {statement}
+() => returnvalue
+
+anonymous function
+let x = function() {
+	code;
+}
+let x = () => code;
