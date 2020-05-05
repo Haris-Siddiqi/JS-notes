@@ -3,13 +3,34 @@
 // let and const are block scoped. should use these by default
 let age = 2;
 
-// rough
-// arrow function examples
-(param1, param2) => {statement}
-() => returnvalue
-
-anonymous function
+// anonymous function
 let x = function() {
 	code;
 }
-let x = () => code;
+
+// arrow function examples
+let x = (param1, param2) => {statement};
+let x = () => returnvalue;
+
+// default value
+const increment = (number, value = 1) => number + value;
+
+// rest opertator (takes in multiple parameters)
+let x = (...nums) => nums;
+
+// spread operator
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+arr2 = [...arr1];
+
+// destructuring
+const { today, tomorrow, yesterday: y } = object; // rename yesterday to y
+
+// destructuring arrays
+let x  = ['apple', 'banana', 'strawberry'];
+let [z, ...y] = x;
+// z = apple
+// y = [ 'banana', 'strawberry' ]
+
+// template literals
+let name = "Haris";
+let x = `Hi my name is ${name}.`;
