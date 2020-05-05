@@ -34,3 +34,9 @@ let [z, ...y] = x;
 // template literals
 let name = "Haris";
 let x = `Hi my name is ${name}.`;
+
+// object literals
+const getMousePosition = (x, y) => ({
+  x: x, // x: 25px example output
+  y: y  // y: 50px
+});
