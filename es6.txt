@@ -40,3 +40,53 @@ const getMousePosition = (x, y) => ({
   x: x, // x: 25px example output
   y: y  // y: 50px
 });
+
+// classes
+class Thermostat {	// UpperCamelCase name
+  constructor(temp) {	// in fahrenheit. get and set in celsius
+    this._temp = temp;
+  }
+  
+  get temperature() {
+    return (5/9 * (this._temp - 32));
+  }
+
+  set temperature(x) {
+    this._temp = (x * 9.0 / 5 + 32);
+  }
+}
+
+// import/export
+// module script to use import/export
+<script type="module" src="filename.js"></script>
+
+// 2 ways to use export
+export const add = (x, y) => {
+  return x + y;
+}
+
+export { add };
+
+// import
+import { add, subtract } from './math_functions.js';
+import * as myMathModule from "./math_functions.js";	// everything
+
+// promises
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to false to represent an unsuccessful response from a server
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {	// if fulfilled
+  console.log(result);
+});
+
+makeServerRequest.catch(error => {	// if not fulfilled
+  console.log(error);
+});
