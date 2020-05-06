@@ -1,0 +1,20 @@
+// reguler expressions are used to match strings
+
+// test method
+let testStr = "freeCodeCamp";
+let testRegex = /Code/;
+testRegex.test(testStr); // Returns true
+
+// match method
+let x = testStr.match(testRegex); // returns ['C', 'C']
+
+// codes
+/string/i // ignore case flag
+/string/g // repeat word flag
+yes|no // matches either yes or no
+
+. // any char
+[a, b] // specific char
+[^b] // not b
+\w // [A-Za-z0-9_]
+w{3} // 3 w's
