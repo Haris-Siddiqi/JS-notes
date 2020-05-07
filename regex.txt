@@ -8,13 +8,33 @@ testRegex.test(testStr); // Returns true
 // match method
 let x = testStr.match(testRegex); // returns ['C', 'C']
 
+// others
+.trim
+.replace
+
 // codes
 /string/i // ignore case flag
 /string/g // repeat word flag
 yes|no // matches either yes or no
 
-. // any char
-[a, b] // specific char
+// techniques
+. // any char (wildcard period)
+[abc] // specific char (a, b or c)
+[a-e] // range a-e
 [^b] // not b
-\w // [A-Za-z0-9_]
+[a+] // all instances of a
+[go*] // 0 or more instances of go
+/t[a-z]*?i/ // lazy matching. finds shortest possible substring
+/^Joe/ // finds Joe only at beginning of string
+/Joe$/ // finds Joe only at the end of string
 w{3} // 3 w's
+w{3, 5} // 3-5 w's
+/colou?r/ // finds spelling with and without u
+
+// shortcuts
+\w // [A-Za-z0-9_]
+\W // [^A-Za-z0-9_]
+\d // [0-9]
+\D // [^0-9]
+\s // whitespace, tab, newline etc
+\S // opposite of \s
