@@ -1,2 +1,0 @@
-// typeof
-console.log(typeof 0); // outputs "number"
