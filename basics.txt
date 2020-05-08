@@ -63,7 +63,7 @@ for (var i = 0; i < val; i++) {
   code;
 }
 
-// arrays
+// arrays, objects
 // see basicDataStructures.txt
 
 // functions
@@ -71,25 +71,6 @@ function functionName(x, y) {
   console.log("Hello World");
   return x + y;
 }
-
-// objects
-// see basicDataStructures.txt
-// similar to arrays but use properties to access them instead
-var cat = {
-  "name": "Whiskers",
-  "legs": 4,
-  "enemies": ["Water", "Dogs"]
-};
-
-// dot notation vs bracket notation
-var x = cat.name; // Whiskers
-var y = cat["legs"]; // 4
-
-// methods
-cat.name = "felix"; // updating object property
-cat["sound"] = "meow"; // add new property
-delete cat.sound; // delete property
-cat.hasOwnProperty("weight"); // check if property exists
 
 // recursion
 function sum(arr, n) {
