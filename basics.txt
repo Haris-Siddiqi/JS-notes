@@ -64,9 +64,7 @@ for (var i = 0; i < val; i++) {
 }
 
 // arrays
-// delare arrays normally, can have different data types, arrays are mutable
-var myArray = ["a", 12, ["b", "c"];
-// .push(), .pop()    .unshift(), .shift()    .length
+// see basicDataStructures.txt
 
 // functions
 function functionName(x, y) {
@@ -75,6 +73,7 @@ function functionName(x, y) {
 }
 
 // objects
+// see basicDataStructures.txt
 // similar to arrays but use properties to access them instead
 var cat = {
   "name": "Whiskers",
