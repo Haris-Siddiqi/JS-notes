@@ -25,6 +25,8 @@ cat["sound"] = "meow"; // add new property
 delete cat.sound; // delete property
 cat.hasOwnProperty("weight"); // check if property exists
 "legs" in cat; // check if property exists
+Object.keys(cat); // returns array of keys
+
 
 // looping
 for (let var in obj) {
