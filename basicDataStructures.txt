@@ -1,6 +1,6 @@
 // array methods
 array.length;
-array.push()   array.pop()       array.unshift()   array.shift()
+array.push()   array.pop()       array.shift()    array.unshift()
 arr.splice(1, 2, 'apple', 'banana'); // start at index 1, remove 2 elements, replace it with 'apple', 'banana'
 arr.slice(1, 3); // copies elements from index [1, 3) into a new array
 newArr.push([...arr]); // spread operator makes a copy of the entire array
