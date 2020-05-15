@@ -1,1 +1,26 @@
+// objects
+// see basicDataStructures.txt
+// similar to arrays but use properties to access them instead
+var cat = {
+  "name": "Whiskers",
+  "legs": 4,
+  "enemies": ["Water", "Dogs"]
+};
 
+// dot notation vs bracket notation
+var x = cat.name; // Whiskers
+var y = cat["legs"]; // 4
+
+// methods
+cat.name = "felix"; // updating object property
+cat["sound"] = "meow"; // add new property
+delete cat.sound; // delete property
+cat.hasOwnProperty("weight"); // check if property exists
+"legs" in cat; // check if property exists
+Object.keys(cat); // returns array of keys
+
+
+// looping
+for (let var in obj) {
+  console.log(var);
+}
