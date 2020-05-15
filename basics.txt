@@ -63,8 +63,13 @@ for (var i = 0; i < val; i++) {
   code;
 }
 
-// arrays, objects
-// see basicDataStructures.txt
+// array methods
+array.length;
+array.push()   array.pop()       array.shift()    array.unshift()
+arr.splice(1, 2, 'apple', 'banana'); // start at index 1, remove 2 elements, replace it with 'apple', 'banana'
+arr.slice(1, 3); // copies elements from index [1, 3) into a new array
+newArr.push([...arr]); // spread operator makes a copy of the entire array
+arr.indexOf(elem); // returns index of element in array or -1 if it does not exist
 
 // functions
 function functionName(x, y) {
